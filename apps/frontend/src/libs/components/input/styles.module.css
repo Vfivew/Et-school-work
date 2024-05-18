@@ -60,18 +60,18 @@
 }
 
 .light {
-	color: var(--color-text-200);
+	color: var(--color-text-100);
 	background-color: var(--main-white);
 	border: 1px solid transparent;
 }
 
 .light:focus {
-	color: var(--color-text-300);
+	color: var(--color-text-100);
 	border: 1px solid var(--main-black);
 }
 
 .light:valid {
-	color: var(--color-text-300);
+	color: var(--color-text-100);
 }
 
 .light:-webkit-autofill,
@@ -98,7 +98,7 @@
 	position: absolute;
 	top: 7px;
 	left: 7px;
-	color: var(--color-text-200);
+	color: var(--color-text-100);
 }
 
 .input-with-icon {
