@@ -1,0 +1,78 @@
+@import url("~/assets/css/media.css");
+
+.button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: inherit;
+	font-weight: inherit;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	border: 1px solid;
+	transition: 0.3s ease;
+}
+
+.regular {
+	min-height: 54px;
+	padding: 8px 24px;
+	font-size: var(--font-size-300);
+	border-radius: 52px;
+}
+
+.small {
+	min-height: 32px;
+	padding: 4px 16px;
+	font-size: var(--font-size-200);
+	border-radius: 26px;
+}
+
+.default {
+	min-height: 38px;
+	padding: 6px 10px;
+	font-size: var(--font-size-200);
+	border-radius: 2px;
+}
+
+.primary {
+	color: var(--main-white);
+	background-color: var(--main-blue);
+	border-color: var(--main-blue);
+}
+
+.secondary {
+	color: var(--main-blue);
+	background-color: transparent;
+	border-color: var(--main-blue);
+}
+
+.button-loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media (--hover-active) {
+	.secondary.disabled:hover {
+		border-color: var(--color-text-100);
+	}
+
+	.secondary:hover {
+		color: var(--main-white);
+		border-color: var(--main-white);
+	}
+
+	.primary.disabled:hover {
+		color: var(--main-white);
+		cursor: default;
+		background-color: var(--color-text-100);
+		border-color: var(--color-text-100);
+	}
+
+	.primary:hover {
+		color: var(--color-text-100);
+		background-color: var(--second-blue);
+	}
+}

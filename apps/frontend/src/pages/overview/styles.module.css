@@ -1,0 +1,55 @@
+@import url("~/assets/css/media.css");
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	padding: 20px;
+}
+
+.button-container {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.list-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	width: 100%;
+}
+
+.button {
+	min-width: 170px;
+}
+
+.title {
+	font-size: var(--font-size-500);
+	font-weight: bold;
+}
+
+@media screen and (--large-screen) {
+	.container {
+		padding: 15px 20px;
+	}
+}
+
+@media screen and (--medium-screen) {
+	.button-container {
+		display: grid;
+		grid-template-columns: repeat(2, 2fr);
+	}
+
+	.list-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (--small-screen) {
+	.list-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

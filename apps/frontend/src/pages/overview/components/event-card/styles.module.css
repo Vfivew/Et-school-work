@@ -1,0 +1,22 @@
+@import url("~/assets/css/media.css");
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	padding: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background-color: var(--second-blue);
+	border: 1px solid var(--main-black);
+	border-radius: 6px;
+}
+
+.button-container {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: space-between;
+}
